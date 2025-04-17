@@ -59,3 +59,10 @@ To install required dependencies:
 ```
 pip install -r requirements.txt
 ```
+### 🤝 Acknowledgment
+
+This project was developed with the help of technical guidance provided through ChatGPT to assist with structuring, scripting, and organizing theoretical genome reconstruction pipelines.
+
+### ⚠️ Data Disclaimer
+
+All data used in this repository was generated through **theoretical and computational simulations** based on probe sequences. It does **not represent experimental or in-lab generated biological data**, and should be interpreted as such unless explicitly stated otherwise.
