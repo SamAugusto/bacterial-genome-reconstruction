@@ -1,0 +1,9 @@
+seqID,patternName,pattern,strand,start,end,matched,NGG,new_header,distance,StrainID
+synthetic_ctg1,Probe_1,ATGCNNNNNNNGG,+,1000,1020,ATGCNNNNNNNGG,TGG,Probe_1_TGG,10492,synthetic
+synthetic_ctg1,Probe_2,ATGCNNNNNNNGG,-,1500,1520,ATGCNNNNNNNGG,AGG,Probe_2_TGG,300,synthetic
+synthetic_ctg1,Probe_3,ATGCNNNNNNNGG,+,2000,2020,ATGCNNNNNNNGG,GGG,Probe_3_TGG,11561,synthetic
+synthetic_ctg1,Probe_4,ATGCNNNNNNNGG,-,2500,2520,ATGCNNNNNNNGG,AGG,Probe_4_TGG,4751,synthetic
+synthetic_ctg1,Probe_5,ATGCNNNNNNNGG,+,3000,3020,ATGCNNNNNNNGG,TGG,Probe_5_TGG,10928,synthetic
+synthetic_ctg1,Probe_6,ATGCNNNNNNNGG,-,3500,3520,ATGCNNNNNNNGG,AGG,Probe_6_TGG,4187,synthetic
+synthetic_ctg1,Probe_7,ATGCNNNNNNNGG,+,4000,4020,ATGCNNNNNNNGG,TGG,Probe_7_TGG,13159,synthetic
+synthetic_ctg1,Probe_8,ATGCNNNNNNNGG,-,4500,4520,ATGCNNNNNNNGG,GGG,Probe_8_TGG,7912,synthetic
