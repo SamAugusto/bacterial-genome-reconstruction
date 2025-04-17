@@ -1,54 +1,61 @@
-# 🧬 Bacterial Genome Reconstruction Pipeline
 
-This repository contains a modular Python pipeline developed during my Data Engineering Internship at Drexel University's School of Biomedical Engineering. The tool automates the extraction, processing, and network modeling of overlapping k-mers from long-read sequencing data (e.g., Nanopore, PacBio) for bacterial genome reconstruction.
+# Bacterial Genome Reconstruction
 
-## 📁 Project Structure
+This repository contains scripts and data for organizing theoretical genome reconstruction from probe-based data. The current focus is on Nanopore sequencing, with future integration of other data types.
 
-```text
-pipeline/
-├── Nodes.py                # Organizes node groupings from filtered k-mers
-├── KmerCounter.py          # Computes minimum hits from each group
-├── kmerList.py             # Generates k-mer summary per sheet
-├── sheet_separation.py     # Splits sheets based on unique probe patterns
-├── delete_sheets.py        # Removes unnecessary sheets from workbook
+## 📁 Repository Structure
+
+- `experimental_data/`: Contains experimental datasets (e.g., filtered hit summaries).
+- `theoretical_data/`: Contains theoretical datasets and processing scripts.
+  - `nanopore/`: Data and scripts related to Nanopore sequencing.
+  - `pacbio/`: Placeholder for future PacBio processing.
+  - `human/`: Placeholder for future Human genome processing.
+- `comparisons/`: (To be used after node verification)
+- `graphs/`: (To be populated after final comparisons)
+- `scripts/`: Additional utility scripts.
+- `requirements.txt`: Python dependencies.
+
+## ✅ Experimental Data
+
+Place your experimental datasets (e.g., `final_min_hit_summary.xlsx`) in the `experimental_data/` directory.
+
+## 🔬 Theoretical Data Processing: Nanopore
+
+The current pipeline processes Nanopore probe `.csv` files to compute distances between probes and determine node pairings based on direction and distance rules.
+
+1. Place raw CSV files in:
+
+   `theoretical_data/nanopore/input/`
+
+2. Run the processing script:
+
+aaa
+python theoretical_data/nanopore/seqkit_node_pairs.py
+aaa
+
+3. Output files will be saved to:
+
+   `theoretical_data/nanopore/output/`
+
+Each result includes a `node_pairs` column with format:
+
+```
+pattern1,pattern2_seqID
 ```
 
-## 💻 What It Does
+Blank rows are inserted to maintain row alignment.
 
-- Parses raw Excel files with k-mer hits and probe IDs
-- Extracts unique groupings of probes based on pattern matches
-- Calculates minimum hits and unique k-mer counts
-- Automates sheet creation and workbook cleanup
+## 📝 Notes
 
-## 🔧 Tools Used
+- This stage processes only Nanopore data.
+- Distance and orientation rules are used to generate theoretical pairings.
+- All results are saved in matching `.csv` formats.
+- Additional sequencing types and comparison steps will follow in future phases.
 
-- Python 3.x
-- pandas
-- openpyxl
-- re (regex)
+## ⚙️ Setup
 
-## 🧪 How to Run
+To install required dependencies:
 
-1. Clone the repository
-2. Install the dependencies:
-   ```bash
-   pip install -r requirements.txt
-3. Place your input file (sequences.xlsx) in the root directory
-4. Run scripts in order
-  python pipeline/sheet_separation.py
-  python pipeline/kmerList.py
-  python pipeline/KmerCounter.py
-  python pipeline/Nodes.py
-  python pipeline/delete_sheets.py
-
----
-
-### 🧠 Additional Notes
-
-Some logic and automation scripts were co-developed using AI-assisted coding support (ChatGPT) to accelerate pipeline development and documentation.
-
-The data shown in the demo input and sample output files was also generated using ChatGPT and is not based on real laboratory data. However, it follows the same format and structure as the actual sequencing data used during my research at Drexel University.
-
-
-
-
+aaa
+pip install -r requirements.txt
+aaa
