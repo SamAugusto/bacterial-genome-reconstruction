@@ -29,9 +29,9 @@ The current pipeline processes Nanopore probe `.csv` files to compute distances 
 
 2. Run the processing script:
 
-aaa
+```
 python theoretical_data/nanopore/seqkit_node_pairs.py
-aaa
+```
 
 3. Output files will be saved to:
 
@@ -56,6 +56,6 @@ Blank rows are inserted to maintain row alignment.
 
 To install required dependencies:
 
-aaa
+```
 pip install -r requirements.txt
-aaa
+```
