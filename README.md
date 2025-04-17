@@ -42,7 +42,13 @@ pipeline/
   python pipeline/delete_sheets.py
 
 ---
-🧠 Some logic and automation scripts were co-developed using AI-assisted coding support (ChatGPT) to accelerate pipeline development and documentation.
+
+### 🧠 Additional Notes
+
+Some logic and automation scripts were co-developed using AI-assisted coding support (ChatGPT) to accelerate pipeline development and documentation.
+
+The data shown in the demo input and sample output files was also generated using ChatGPT and is not based on real laboratory data. However, it follows the same format and structure as the actual sequencing data used during my research at Drexel University.
+
 
 
 
