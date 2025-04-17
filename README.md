@@ -41,5 +41,8 @@ pipeline/
   python pipeline/Nodes.py
   python pipeline/delete_sheets.py
 
+---
+🧠 Some logic and automation scripts were co-developed using AI-assisted coding support (ChatGPT) to accelerate pipeline development and documentation.
+
 
 
