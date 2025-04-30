@@ -54,7 +54,7 @@ Blank rows are inserted to maintain row alignment.
 ## 🧪 Node Pair Comparison Module (Nanopore & PacBio)
 
 The `scripts/node_comparisson.py` script processes the last column from `_updated.csv` files,
-extracts probe pairings, removes genomic suffixes, and compares them with a reference summary file (e.g., `BlatsnSummary_node_summary_500nodeOver5reads.csv`).
+extracts probe pairings, removes genomic suffixes, and compares them with a reference summary file (e.g., `BlatsnSummary.csv`).
 
 Outputs (saved locally, not included in repo):
 - `pacbio_unique_nodes.xlsx`
