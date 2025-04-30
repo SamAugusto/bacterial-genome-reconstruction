@@ -61,6 +61,16 @@ Outputs (saved locally, not included in repo):
 - `nanopore_unique_nodes.xlsx`
 - `combined_pacbio_nodes.xlsx`
 - `combined_nanopore_nodes.xlsx`
+
+## 📁 Sample Input
+
+A dummy file is included at `data/sample_pairs_updated.csv` to demonstrate the structure expected by `node_comparisson.py`.
+
+It includes:
+- Last-column combinations with suffixes (e.g., `-Hflu_dummy_ctg1`)
+- Multiple columns to simulate typical `_updated.csv` content
+
+
 To run:
 ```bash
 python scripts/node_comparisson.py
