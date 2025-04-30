@@ -1,0 +1,4 @@
+patternName,strand,start,distance,alignment_score,other_info_1,other_info_2,other_info_3,some_id,misc_notes,tool_output,extra_col_1,Combination
+Probe_7_CGG_vs_Probe_83_CGG,+,1000,500,95.5,info1,metaA,123,abc,note1,resultA,x,Probe_7_CGG_vs_Probe_83_CGG-Hflu_dummy_ctg1
+Probe_10_AGG_vs_Probe_109_TGG,+,2400,800,88.3,info2,metaB,456,def,note2,resultB,y,Probe_10_AGG_vs_Probe_109_TGG-Hflu_dummy_ctg1
+Probe_105_TGG_vs_Probe_108_TGG,-,3850,1200,90.1,info3,metaC,789,ghi,note3,resultC,z,Probe_105_TGG_vs_Probe_108_TGG-Hflu_dummy_ctg1
