@@ -51,7 +51,20 @@ Blank rows are inserted to maintain row alignment.
 - Distance and orientation rules are used to generate theoretical pairings.
 - All results are saved in matching `.csv` formats.
 - Additional sequencing types and comparison steps will follow in future phases.
+## 🧪 Node Pair Comparison Module (Nanopore & PacBio)
 
+The `scripts/node_comparisson.py` script processes the last column from `_updated.csv` files,
+extracts probe pairings, removes genomic suffixes, and compares them with a reference summary file (e.g., `BlatsnSummary_node_summary_500nodeOver5reads.csv`).
+
+Outputs (saved locally, not included in repo):
+- `pacbio_unique_nodes.xlsx`
+- `nanopore_unique_nodes.xlsx`
+- `combined_pacbio_nodes.xlsx`
+- `combined_nanopore_nodes.xlsx`
+To run:
+```bash
+python scripts/node_comparisson.py
+```
 ## ⚙️ Setup
 
 To install required dependencies:
