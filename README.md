@@ -1,4 +1,3 @@
-
 # Bacterial Genome Reconstruction
 
 This repository contains scripts and data for organizing theoretical genome reconstruction from probe-based data. The current focus is on Nanopore sequencing, with future integration of other data types.
@@ -8,7 +7,7 @@ This repository contains scripts and data for organizing theoretical genome reco
 - `experimental_data/`: Contains experimental datasets (e.g., filtered hit summaries).
 - `theoretical_data/`: Contains theoretical datasets and processing scripts.
   - `nanopore/`: Data and scripts related to Nanopore sequencing.
-  - `pacbio/`: Placeholder for future PacBio processing.
+  - `pacbio/`:  PacBio processing.
   - `human/`: Placeholder for future Human genome processing.
 - `comparisons/`: (To be used after node verification)
 - `graphs/`: (To be populated after final comparisons)
@@ -51,6 +50,7 @@ Blank rows are inserted to maintain row alignment.
 - Distance and orientation rules are used to generate theoretical pairings.
 - All results are saved in matching `.csv` formats.
 - Additional sequencing types and comparison steps will follow in future phases.
+
 ## 🧪 Node Pair Comparison Module (Nanopore & PacBio)
 
 The `scripts/node_comparisson.py` script processes the last column from `_updated.csv` files,
@@ -70,11 +70,11 @@ It includes:
 - Last-column combinations with suffixes (e.g., `-Hflu_dummy_ctg1`)
 - Multiple columns to simulate typical `_updated.csv` content
 
-
 To run:
 ```bash
 python scripts/node_comparisson.py
 ```
+
 ## ⚙️ Setup
 
 To install required dependencies:
@@ -82,6 +82,7 @@ To install required dependencies:
 ```
 pip install -r requirements.txt
 ```
+
 ### 🤝 Acknowledgment
 
 This project was developed with the help of technical guidance provided through ChatGPT to assist with structuring, scripting, and organizing theoretical genome reconstruction pipelines.
